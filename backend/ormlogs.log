@@ -1,0 +1,154 @@
+[2020-12-03T13:57:18.221Z][INFO]: No classes were found using the provided glob pattern:  "src/models/*.ts"
+[2020-12-03T13:57:18.223Z][INFO]: No classes were found using the provided glob pattern:  "src/database/migrations/*.ts"
+[2020-12-03T14:09:42.444Z][INFO]: No classes were found using the provided glob pattern:  "src/models/*.ts"
+[2020-12-03T14:09:42.445Z][INFO]: No classes were found using the provided glob pattern:  "src/database/migrations/*.ts"
+[2020-12-03T14:19:14.365Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2020-12-03T14:19:14.376Z][QUERY]: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f526340ab734260ea46be" PRIMARY KEY ("id"))
+[2020-12-03T14:19:14.725Z][QUERY]: SELECT * FROM "migrations" "migrations"  ORDER BY "id" DESC
+[2020-12-03T14:19:14.726Z]0 migrations are already loaded in the database.
+[2020-12-03T14:19:14.727Z]1 migrations were found in the source code.
+[2020-12-03T14:19:14.727Z]1 migrations are new migrations that needs to be executed.
+[2020-12-03T14:19:14.727Z][QUERY]: START TRANSACTION
+[2020-12-03T14:19:14.729Z][QUERY]: CREATE TABLE "users" ("id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" varchar NOT NULL, "email" varchar NOT NULL, "password" varchar NOT NULL, "created_at" timestamp NOT NULL DEFAULT now(), "updated_at" timestamp NOT NULL DEFAULT now(), CONSTRAINT "UQ_97672ac88f789774dd47f7c8be3" UNIQUE ("email"), CONSTRAINT "PK_a3ffb1c0c8416b9fc6f907b7433" PRIMARY KEY ("id"))
+[2020-12-03T14:19:14.896Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1607004729011,"CreateUsersTable1607004729011"]
+[2020-12-03T14:19:14.898Z]Migration CreateUsersTable1607004729011 has been executed successfully.
+[2020-12-03T14:19:14.899Z][QUERY]: COMMIT
+[2020-12-03T14:49:40.545Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:49:40.582Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:49:59.546Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:49:59.556Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:50:16.148Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:50:16.183Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:50:46.567Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:50:46.577Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:50:52.864Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:50:52.873Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:50:54.669Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:50:54.679Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:51:02.574Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:51:02.583Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:51:37.387Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:51:37.396Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:51:49.290Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:51:49.301Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:52:09.789Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:52:09.798Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:52:22.683Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:52:22.693Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:52:29.886Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:52:29.895Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:52:48.091Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:52:48.100Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:52:58.595Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:52:58.604Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:53:04.507Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:53:04.516Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:53:06.497Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:53:06.506Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:53:14.702Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:53:14.712Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:53:32.694Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:53:32.704Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:56:53.448Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:56:53.456Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:57:10.856Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:57:10.863Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:57:18.756Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:57:18.763Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:58:03.059Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:58:03.065Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:58:04.362Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T14:58:04.368Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T14:58:59.337Z][QUERY]: START TRANSACTION
+[2020-12-03T14:58:59.343Z][QUERY]: INSERT INTO "users"("id", "name", "email", "password", "created_at", "updated_at") VALUES (DEFAULT, $1, $2, $3, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at" -- PARAMETERS: ["Alex Borelli","alex.sander.borelli@outlook.com","$2a$08$JKeRyBAmTkY2Wn8PNeLi2O8r/tg7JnCs1TQogr5i/kVnMsq/or7fm"]
+[2020-12-03T14:58:59.373Z][QUERY]: COMMIT
+[2020-12-03T15:00:27.192Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:00:27.199Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:00:37.990Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:00:37.996Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:01:25.804Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:01:25.810Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:01:33.310Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:01:33.316Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:01:37.315Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:01:37.322Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:02:20.023Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:02:20.029Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:02:50.525Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:02:50.532Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:03:01.996Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex.sander.borelli@outlook.com LIMIT 1
+[2020-12-03T15:03:02.008Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex.sander.borelli@outlook.com LIMIT 1
+[2020-12-03T15:03:02.008Z][QUERY ERROR]: error: missing FROM-clause entry for table "sander"
+[2020-12-03T15:03:23.737Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:03:23.744Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:03:34.639Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:03:34.646Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:03:37.635Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:03:37.642Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:03:43.839Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:03:43.845Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:03:58.549Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:03:58.556Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:04:02.650Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:04:02.656Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:04:07.953Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:04:07.959Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:04:11.354Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:04:11.360Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:15:23.853Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:15:23.860Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:15:27.449Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:15:27.455Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:15:34.118Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex.sander.borelli@outlook.com LIMIT 1
+[2020-12-03T15:15:34.121Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex.sander.borelli@outlook.com LIMIT 1
+[2020-12-03T15:15:34.121Z][QUERY ERROR]: error: missing FROM-clause entry for table "sander"
+[2020-12-03T15:15:49.060Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:15:49.066Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:15:55.157Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:15:55.163Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:16:06.458Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:16:06.464Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:16:11.001Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex.sander.borelli@outlook.com LIMIT 1
+[2020-12-03T15:16:11.004Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex.sander.borelli@outlook.com LIMIT 1
+[2020-12-03T15:16:11.004Z][QUERY ERROR]: error: missing FROM-clause entry for table "sander"
+[2020-12-03T15:16:58.226Z][QUERY]: START TRANSACTION
+[2020-12-03T15:16:58.231Z][QUERY]: INSERT INTO "users"("id", "name", "email", "password", "created_at", "updated_at") VALUES (DEFAULT, $1, $2, $3, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at" -- PARAMETERS: ["Alex Borelli","alex@outlook.com","$2a$08$Ke9Qd6bWiyU1Iq5suxWOQulL3K6F6oyvFVRTL/Bcf4vDAKQT23e8C"]
+[2020-12-03T15:16:58.241Z][QUERY]: COMMIT
+[2020-12-03T15:17:04.945Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:17:04.950Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:17:04.950Z][QUERY ERROR]: error: column "alex" does not exist
+[2020-12-03T15:17:26.270Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:17:26.276Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:20:24.665Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:20:24.672Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:20:28.159Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:20:28.167Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:20:35.166Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:20:35.173Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:20:42.363Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:20:42.370Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:20:45.392Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:20:45.395Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:20:45.395Z][QUERY ERROR]: error: column "alex" does not exist
+[2020-12-03T15:21:14.072Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:21:14.079Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:21:58.382Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:21:58.389Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:22:09.093Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:22:09.100Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:22:38.188Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:22:38.193Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:22:38.193Z][QUERY ERROR]: error: column "alex" does not exist
+[2020-12-03T15:23:51.537Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:23:51.543Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:24:06.036Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:24:06.043Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:24:39.049Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:24:39.057Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:24:46.351Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:24:46.358Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:24:49.459Z][INFO]: All classes found using provided glob pattern "src/models/*.ts" : "src/models/User.ts"
+[2020-12-03T15:24:49.469Z][INFO]: All classes found using provided glob pattern "src/database/migrations/*.ts" : "src/database/migrations/1607004729011-CreateUsersTable.ts"
+[2020-12-03T15:25:18.520Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE 'alex@outlook.com' LIMIT 1
+[2020-12-03T15:25:18.526Z][FAILED QUERY]: SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email", "User"."password" AS "User_password", "User"."created_at" AS "User_created_at", "User"."updated_at" AS "User_updated_at" FROM "users" "User" WHERE alex@outlook.com LIMIT 1
+[2020-12-03T15:25:18.526Z][QUERY ERROR]: error: column "alex" does not exist
